@@ -152,9 +152,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="8PRO128-TP2.cpp" />
+    <ClCompile Include="Carre.cpp" />
+    <ClCompile Include="Cercle.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Ellipse.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Tetraedre.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TriangleEq.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ResourceFiles\TP2_2.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Carre.h" />
+    <ClInclude Include="Cercle.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="Tetraedre.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriangleEq.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
