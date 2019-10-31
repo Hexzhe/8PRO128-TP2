@@ -1,10 +1,13 @@
 #pragma once
 #include "Figure.h"
+
 class Rectangle :
 	public Figure
 {
-
 public:
+	Rectangle();
+	~Rectangle() {};
+
 	double largeur;
 	double longueur;
 
@@ -13,4 +16,3 @@ public:
 	double diagonale();
 	void afficher();
 };
-

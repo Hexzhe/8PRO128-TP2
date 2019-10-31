@@ -1,19 +1,26 @@
 #include "Cercle.h"
 
-double temp;
-
-double Cercle::aire() {
-	return (M_PI * (pow(temp,2));
+Cercle::Cercle()
+{
+	//TODO: Don't forget >> override
 }
 
-double Cercle::perimetre() {
-	return (2 * M_PI * temp);
+double Cercle::aire() 
+{
+	return M_PI * pow(rayon, 2);
 }
 
-double Cercle::diametre() {
-	return (2 * temp);
+double Cercle::perimetre() 
+{
+	return 2 * M_PI * rayon;
 }
 
-void Cercle::afficher() {
+double Cercle::diametre() 
+{
+	return 2 * rayon;
+}
 
+void Cercle::afficher() 
+{
+	//TODO: Override << instead?
 }

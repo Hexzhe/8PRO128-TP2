@@ -1,11 +1,13 @@
 #pragma once
 #include "Ellipse.h"
-#include <cmath>
 
 class Cercle :
 	public Ellipse
 {
 public : 
+	Cercle();
+	~Cercle() {};
+
 	double rayon;
 
 	double aire();
@@ -13,4 +15,3 @@ public :
 	double diametre();
 	void afficher();
 };
-

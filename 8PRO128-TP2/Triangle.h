@@ -1,14 +1,19 @@
 #pragma once
-class Triangle
+#include "Figure.h"
+
+class Triangle :
+	public Figure
 {
 public:
+	Triangle();
+	~Triangle() {};
+
 	double cote1;
 	double cote2;
 	double cote3;
 
 	double aire();
 	double perimetre();
-	double hauteur(TriangleEq cote);
+	double hauteur(int cote);
 	void afficher();
 };
-

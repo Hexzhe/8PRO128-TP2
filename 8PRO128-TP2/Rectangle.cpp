@@ -1,20 +1,26 @@
 #include "Rectangle.h"
-#include <cmath>
 
-double longueur, largeur;
+Rectangle::Rectangle()
+{
+	//TODO: Don't forget >> override
+}
 
-double aire() {
+double Rectangle::aire() 
+{
 	return longueur * largeur;
 }
 
-double perimetre() {
+double Rectangle::perimetre() 
+{
 	return (largeur + longueur) * 2;
 }
 
-double diagonale() {
+double Rectangle::diagonale() 
+{
 	return sqrt(pow(largeur, 2) + pow(longueur, 2));
 }
 
-void afficher() {
-
+void Rectangle::afficher()
+{
+	//TODO: Override << instead?
 }

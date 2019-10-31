@@ -1,10 +1,13 @@
 #pragma once
 #include "Triangle.h"
+
 class TriangleEq :
 	public Triangle
 {
-
 public:
+	TriangleEq();
+	~TriangleEq() {};
+
 	double cote;
 
 	double aire();
@@ -12,4 +15,3 @@ public:
 	double hauteur();
 	void afficher();
 };
-

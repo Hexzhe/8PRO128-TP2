@@ -1,20 +1,26 @@
 #include "TriangleEq.h"
-#include <cmath>
 
-double tmp;
-
-double aire() {
-	return (pow(tmp, 2) * sqrt(3/4));
+TriangleEq::TriangleEq()
+{
+	//TODO: Don't forget >> override
 }
 
-double perimetre() {
-	return (tmp * 3);
+double TriangleEq::aire() 
+{
+	return pow(cote, 2) * sqrt(3) / 4;
 }
 
-double hauteur() {
-	return (tmp * sqrt(3/2));
+double TriangleEq::perimetre() 
+{
+	return cote * 3;
 }
 
-void afficher() {
+double TriangleEq::hauteur() 
+{
+	return cote * sqrt(3) / 2;
+}
 
+void TriangleEq::afficher() 
+{
+	//TODO: Override << instead?
 }

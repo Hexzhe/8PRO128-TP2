@@ -1,9 +1,13 @@
 #pragma once
 #include "Rectangle.h"
+
 class Carre :
 	public Rectangle
 {
 public:
+	Carre();
+	~Carre() {};
+
 	double cote;
 
 	double aire();
@@ -11,4 +15,3 @@ public:
 	double diagonale();
 	void afficher();
 };
-

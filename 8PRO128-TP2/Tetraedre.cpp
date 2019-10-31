@@ -1,25 +1,32 @@
 #include "Tetraedre.h"
-#include <cmath>
 
-double tmp;
-
-double aire() {
-	return (sqrt(3 * pow(tmp, 2)));
+Tetraedre::Tetraedre()
+{
+	//TODO: Don't forget >> override
 }
 
-double face() {
-	return (pow(tmp, 2) * sqrt(3 / 4));
+double Tetraedre::aire()
+{
+	return sqrt(3) * pow(cote, 2);
 }
 
-double volume() {
-	return (pow(tmp, 2) * sqrt(3 / 4));
+double Tetraedre::face()
+{
+	return base.aire();
+}
+
+double Tetraedre::volume()
+{
+	return pow(cote, 3) * sqrt(2) / 12;
 
 }
 
-double hauteur() {
-	return (sqrt((6 / 3 * tmp)));
+double Tetraedre::hauteur()
+{
+	return sqrt(6) / 3 * cote;
 }
 
-void afficher() {
-
+void Tetraedre::afficher()
+{
+	//TODO: Override << instead?
 }

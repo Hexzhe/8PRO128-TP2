@@ -1,10 +1,13 @@
 #pragma once
 #include "TriangleEq.h"
+
 class Tetraedre :
 	public TriangleEq
 {
-
 public:
+	Tetraedre();
+	~Tetraedre() {};
+
 	Triangle base;
 
 	double aire();
@@ -13,4 +16,3 @@ public:
 	double hauteur();
 	void afficher();
 };
-

@@ -1,20 +1,26 @@
 #include "Carre.h"
-#include <cmath>
 
-double cote;
-
-double aire() {
-	return 6 * (cote*cote);
+Carre::Carre()
+{
+	//TODO: Don't forget >> override
 }
 
-double face() {
-	return cote * cote;
+double Carre::aire() 
+{
+	return pow(cote, 2);
 }
 
-double volume() {
-	return pow(cote, 3);
+double Carre::perimetre() 
+{
+	return 4 * cote;
 }
 
-void afficher() {
+double Carre::diagonale() 
+{
+	return sqrt(aire() * 2);
+}
 
+void Carre::afficher() 
+{
+	//TODO: Override << instead?
 }

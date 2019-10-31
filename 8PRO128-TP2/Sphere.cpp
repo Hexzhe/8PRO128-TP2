@@ -1,18 +1,26 @@
 #include "Sphere.h"
 
-double tmpRayon;
-double Cercle::diametre() {
-	return (2 * tmpRayon);
+Sphere::Sphere()
+{
+	//TODO: Don't forget >> override
 }
 
-double aire() {
-	return (4 * Cercle::aire());
+double Sphere::diametre() 
+{
+	return 2 * rayon;
 }
 
-void Cercle::afficher() {
-
+double Sphere::aire() 
+{
+	return 4 * aire();
 }
 
-double volume() {
-	return (4 * M_PI * pow(tmpRayon, 3)) / 3;
+double Sphere::volume()
+{
+	return 4 * M_PI * pow(rayon, 3) / 3;
+}
+
+void Sphere::afficher() 
+{
+	//TODO: Override << instead?
 }

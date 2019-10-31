@@ -1,19 +1,37 @@
 #include "Triangle.h"
-#include <cmath>
 
-double aire() {
+Triangle::Triangle()
+{
+	//TODO: Don't forget >> override
+}
+
+double Triangle::aire() 
+{
 	double p = perimetre();
 	return sqrt(p * (p - cote1) * (p - cote2) * (p - cote3));
 }
 
-double perimetre() {
+double Triangle::perimetre() 
+{
 	return cote1 + cote2 + cote3;
 }
 
-double hauteur(TriangleEq cote) {
-	return (2 * (aire() / cote));
+double Triangle::hauteur(int cote) 
+{
+	assert(cote > 0 && cote <= 3);
+
+	switch (cote)
+	{
+	case 1:
+		return 2 * aire() / cote1;
+	case 2:
+		return 2 * aire() / cote2;
+	case 3:
+		return 2 * aire() / cote3;
+	}
 }
 
-void afficher() {
-
+void Triangle::afficher() 
+{
+	//TODO: Override << instead?
 }
