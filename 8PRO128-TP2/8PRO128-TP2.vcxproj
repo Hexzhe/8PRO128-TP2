@@ -178,6 +178,10 @@
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="TriangleEq.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="carre.txt" />
+    <Text Include="rectangle.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

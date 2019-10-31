@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="plssort">
+      <UniqueIdentifier>{50abc00d-e2dc-443d-9a78-4f8d0e9a891c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="8PRO128-TP2.cpp">
@@ -85,5 +88,13 @@
     <ClInclude Include="Cube.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="carre.txt">
+      <Filter>plssort</Filter>
+    </Text>
+    <Text Include="rectangle.txt">
+      <Filter>plssort</Filter>
+    </Text>
   </ItemGroup>
 </Project>
