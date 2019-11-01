@@ -15,6 +15,7 @@ public :
 	double diametre();
 
 	void afficher();
+	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Cercle& cercle);
 	friend std::ostream& operator<<(std::ostream& os, const Cercle& cercle);

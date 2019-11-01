@@ -13,6 +13,7 @@ public:
 	double diagonale();
 
 	void afficher();
+	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Carre& carre);
 	friend std::ostream& operator<<(std::ostream& os, const Carre& carre);

@@ -14,6 +14,7 @@ public:
 	double hauteur();
 
 	void afficher();
+	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Tetraedre& tetraedre);
 	friend std::ostream& operator<<(std::ostream& os, const Tetraedre& tetraedre);

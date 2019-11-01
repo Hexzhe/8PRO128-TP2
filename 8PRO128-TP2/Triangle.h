@@ -17,6 +17,7 @@ public:
 	double hauteur(int cote);
 
 	void afficher();
+	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Triangle& triangle);
 	friend std::ostream& operator<<(std::ostream& os, const Triangle& triangle);

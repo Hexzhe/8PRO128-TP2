@@ -5,6 +5,12 @@ void Context::ExecCarre()
 	std::ifstream ifs = GetFileStream("ResourceFiles/carre.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Carre::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* carre = new Carre();
@@ -23,6 +29,12 @@ void Context::ExecCercle()
 	std::ifstream ifs = GetFileStream("ResourceFiles/cercle.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Cercle::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* cercle = new Cercle();
@@ -41,6 +53,12 @@ void Context::ExecTriangleEq()
 	std::ifstream ifs = GetFileStream("ResourceFiles/triangleEq.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << TriangleEq::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* triangleEq = new TriangleEq();
@@ -59,6 +77,12 @@ void Context::ExecRectangle()
 	std::ifstream ifs = GetFileStream("ResourceFiles/rectangle.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Rectangle::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* rectangle = new Rectangle();
@@ -77,6 +101,12 @@ void Context::ExecTriangle()
 	std::ifstream ifs = GetFileStream("ResourceFiles/triangle.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Triangle::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* triangle = new Triangle();
@@ -95,6 +125,12 @@ void Context::ExecTetraedre()
 	std::ifstream ifs = GetFileStream("ResourceFiles/tetraedre.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Tetraedre::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* tetraedre = new Tetraedre();
@@ -113,6 +149,12 @@ void Context::ExecCube()
 	std::ifstream ifs = GetFileStream("ResourceFiles/cube.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Cube::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* cube = new Cube();
@@ -131,6 +173,12 @@ void Context::ExecSphere()
 	std::ifstream ifs = GetFileStream("ResourceFiles/sphere.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Sphere::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* sphere = new Sphere();
@@ -149,6 +197,12 @@ void Context::ExecEllipse()
 	std::ifstream ifs = GetFileStream("ResourceFiles/ellipsee.txt");
 	int count = 0;
 	ifs >> count;
+
+	std::cout << Ellipse::getEntete() << std::endl;
+
+	if (count < 1)
+		std::cout << "  No data" << std::endl;
+
 	for (size_t i = 0; i < count; i++)
 	{
 		auto* ellipse = new Ellipse();

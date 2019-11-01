@@ -13,6 +13,7 @@ public:
 	double hauteur();
 
 	void afficher();
+	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, TriangleEq& triangleEq);
 	friend std::ostream& operator<<(std::ostream& os, const TriangleEq& triangleEq);

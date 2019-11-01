@@ -21,11 +21,16 @@ double TriangleEq::hauteur()
 
 void TriangleEq::afficher() 
 {
-	//TODO: Output header
 	std::cout << *this << std::endl;
 
 	//TODO: Output header if file empty
-	//TODO: output (append or create) in a file "resultsCarre.txt"
+	//TODO: output (append or create) in a file "results{Name}.txt"
+}
+
+std::string TriangleEq::getEntete()
+{
+	//TODO
+	return "=====TODO=====";
 }
 
 std::istream& operator>>(std::istream& is, TriangleEq& triangleEq)

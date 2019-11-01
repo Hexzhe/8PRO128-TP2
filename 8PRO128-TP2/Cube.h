@@ -13,6 +13,7 @@ public:
 	double volume();
 
 	void afficher();
+	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Cube& cube);
 	friend std::ostream& operator<<(std::ostream& os, const Cube& cube);

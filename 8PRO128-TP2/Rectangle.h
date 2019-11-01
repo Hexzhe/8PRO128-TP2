@@ -16,6 +16,7 @@ public:
 	double diagonale();
 
 	void afficher();
+	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Rectangle& rectangle);
 	friend std::ostream& operator<<(std::ostream& os, const Rectangle& rectangle);
