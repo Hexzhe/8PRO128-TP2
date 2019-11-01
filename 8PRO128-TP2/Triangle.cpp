@@ -44,12 +44,7 @@ void Triangle::afficher()
 
 std::istream& operator>>(std::istream& is, Triangle& triangle)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> triangle.cote1 >> triangle.cote2 >> triangle.cote3;
 
 	return is;
 }

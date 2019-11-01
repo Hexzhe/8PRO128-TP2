@@ -26,12 +26,8 @@ void TriangleEq::afficher()
 
 std::istream& operator>>(std::istream& is, TriangleEq& triangleEq)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> triangleEq.cote1;
+	triangleEq.cote3 = triangleEq.cote2 = triangleEq.cote1;
 
 	return is;
 }

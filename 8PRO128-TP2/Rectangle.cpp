@@ -28,12 +28,7 @@ void Rectangle::afficher()
 
 std::istream& operator>>(std::istream& is, Rectangle& rectangle)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> rectangle.largeur >> rectangle.longueur;
 
 	return is;
 }

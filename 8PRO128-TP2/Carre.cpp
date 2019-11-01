@@ -6,12 +6,12 @@ Carre::Carre() : Rectangle()
 
 double Carre::aire() 
 {
-	return pow(Rectangle::longueur, 2);
+	return pow(Rectangle::largeur, 2);
 }
 
 double Carre::perimetre() 
 {
-	return 4 * Rectangle::longueur;
+	return 4 * Rectangle::largeur;
 }
 
 double Carre::diagonale() 
@@ -27,8 +27,8 @@ void Carre::afficher()
 
 std::istream& operator>>(std::istream& is, Carre& carre)
 {
-	is >> carre.longueur;
-	carre.largeur = carre.longueur;
+	is >> carre.largeur;
+	carre.longueur = carre.largeur;
 
 	return is;
 }

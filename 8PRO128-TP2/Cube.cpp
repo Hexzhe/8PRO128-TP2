@@ -16,7 +16,7 @@ double Cube::face()
 
 double Cube::volume() 
 {
-	return pow(Carre::longueur, 3);
+	return pow(Carre::largeur, 3);
 }
 
 void Cube::afficher() 
@@ -26,12 +26,7 @@ void Cube::afficher()
 
 std::istream& operator>>(std::istream& is, Cube& cube)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> cube.largeur >> cube.longueur;
 
 	return is;
 }

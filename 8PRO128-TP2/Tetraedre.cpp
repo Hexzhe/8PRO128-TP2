@@ -32,12 +32,7 @@ void Tetraedre::afficher()
 
 std::istream& operator>>(std::istream& is, Tetraedre& tetraedre)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> tetraedre.cote1 >> tetraedre.cote2 >> tetraedre.cote3;
 
 	return is;
 }

@@ -27,12 +27,7 @@ void Cercle::afficher()
 
 std::istream& operator>>(std::istream& is, Cercle& cercle)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> cercle.rayon;
 
 	return is;
 }

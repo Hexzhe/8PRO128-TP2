@@ -26,12 +26,7 @@ void Sphere::afficher()
 
 std::istream& operator>>(std::istream& is, Sphere& sphere)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> sphere.rayon;
 
 	return is;
 }
