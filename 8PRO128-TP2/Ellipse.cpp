@@ -2,5 +2,10 @@
 
 Ellipse::Ellipse()
 {
-	//TODO: Don't forget >> override
+	
+}
+
+void Ellipse::afficher()
+{
+	std::cout << this << std::endl;
 }

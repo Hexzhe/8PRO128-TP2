@@ -14,4 +14,16 @@ public:
 	double perimetre();
 	double hauteur();
 	void afficher();
+
+	friend std::istream& operator>>(std::istream& is, TriangleEq& triangleEq) {
+		//TODO
+		return is;
+	}
+
+	friend std::ostream& operator<<(std::ostream& os, const TriangleEq& triangleEq)
+	{
+		//TODO
+		os << " Not implemented";
+		return os;
+	}
 };

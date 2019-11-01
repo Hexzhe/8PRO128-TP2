@@ -48,6 +48,9 @@
     <ClCompile Include="Cube.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Figure.h">
@@ -80,18 +83,39 @@
     <ClInclude Include="Cube.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="ResourceFiles\carre.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="ResourceFiles\rectangle.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
+    <ClInclude Include="Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ResourceFiles\TP2_2.docx">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ResourceFiles\carre.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ResourceFiles\cercle.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ResourceFiles\cube.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ResourceFiles\rectangle.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ResourceFiles\sphere.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ResourceFiles\tetraedre.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ResourceFiles\triangle.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ResourceFiles\triangleEq.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
