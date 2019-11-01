@@ -21,8 +21,11 @@ double Carre::diagonale()
 
 void Carre::afficher() 
 {
+	//TODO: Output header
 	std::cout << *this << std::endl;
-	//TODO: output (append or create) the objects in a file "resultsCarre.txt"
+
+	//TODO: Output header if file empty
+	//TODO: output (append or create) in a file "resultsCarre.txt"
 }
 
 std::istream& operator>>(std::istream& is, Carre& carre)

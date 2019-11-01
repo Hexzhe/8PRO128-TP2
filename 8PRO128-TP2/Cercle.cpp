@@ -22,7 +22,11 @@ double Cercle::diametre()
 
 void Cercle::afficher() 
 {
+	//TODO: Output header
 	std::cout << *this << std::endl;
+
+	//TODO: Output header if file empty
+	//TODO: output (append or create) in a file "resultsCarre.txt"
 }
 
 std::istream& operator>>(std::istream& is, Cercle& cercle)
