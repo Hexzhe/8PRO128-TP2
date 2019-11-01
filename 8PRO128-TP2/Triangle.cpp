@@ -18,7 +18,11 @@ double Triangle::perimetre()
 
 double Triangle::hauteur(int cote) 
 {
-	assert(cote > 0 && cote <= 3);
+	if (cote <= 0 || cote > 3)
+	{
+		std::cout << "ERROR: Triangle::hauteur(int) param must be between 1-3" << std::endl;
+		exit(1);
+	}
 
 	switch (cote)
 	{
