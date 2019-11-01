@@ -164,9 +164,6 @@
     <ClCompile Include="TriangleEq.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ResourceFiles\TP2_2.docx" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Carre.h" />
     <ClInclude Include="Cercle.h" />
     <ClInclude Include="Cube.h" />
@@ -179,8 +176,11 @@
     <ClInclude Include="TriangleEq.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="carre.txt" />
-    <Text Include="rectangle.txt" />
+    <Text Include="ResourceFiles\carre.txt" />
+    <Text Include="ResourceFiles\rectangle.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourceFiles\TP2_2.docx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
