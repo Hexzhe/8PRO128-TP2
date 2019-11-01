@@ -13,6 +13,7 @@ public:
 	double aire();
 	double perimetre();
 	double diagonale();
+
 	void afficher();
 
 	friend std::istream& operator>>(std::istream& is, Carre& carre) {
@@ -23,7 +24,7 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, const Carre& carre)
 	{
 		//TODO
-		os << " Not implemented";
+		os << " Not implemented (Carre)";
 		return os;
 	}
 };

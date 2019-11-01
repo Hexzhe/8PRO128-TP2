@@ -22,5 +22,5 @@ double TriangleEq::hauteur()
 
 void TriangleEq::afficher() 
 {
-	//TODO: Override << instead?
+	std::cout << *this << std::endl;
 }

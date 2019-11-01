@@ -22,5 +22,5 @@ double Cercle::diametre()
 
 void Cercle::afficher() 
 {
-	//TODO: Override << instead?
+	std::cout << *this << std::endl;
 }

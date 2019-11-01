@@ -13,6 +13,7 @@ public:
 	double aire();
 	double perimetre();
 	double hauteur();
+
 	void afficher();
 
 	friend std::istream& operator>>(std::istream& is, TriangleEq& triangleEq) {
@@ -23,7 +24,7 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, const TriangleEq& triangleEq)
 	{
 		//TODO
-		os << " Not implemented";
+		os << " Not implemented (TriangleEq)";
 		return os;
 	}
 };

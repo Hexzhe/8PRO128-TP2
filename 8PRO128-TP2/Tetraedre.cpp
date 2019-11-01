@@ -28,5 +28,5 @@ double Tetraedre::hauteur()
 
 void Tetraedre::afficher()
 {
-	//TODO: Override << instead?
+	std::cout << *this << std::endl;
 }

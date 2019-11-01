@@ -33,5 +33,5 @@ double Triangle::hauteur(int cote)
 
 void Triangle::afficher() 
 {
-	//TODO: Override << instead?
+	std::cout << *this << std::endl;
 }

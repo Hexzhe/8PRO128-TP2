@@ -19,7 +19,7 @@ int main()
 
 	while (true)
 	{
-		std::cout << "Menu\n  1-    Carre\n  2-    Cercle\n  3-    Triangle Eq.\n  4-    Rectangle\n  5-    Triangle\n  6-    Tetraedre\n  7-    Cube\n  8-    Sphere\n  help- Show help\n  exit- Terminate the program" << std::endl;
+		std::cout << "Menu\n  1-    Carre\n  2-    Cercle\n  3-    Triangle Eq.\n  4-    Rectangle\n  5-    Triangle\n  6-    Tetraedre\n  7-    Cube\n  8-    Sphere\n  9-    Ellipse\n  help- Show help\n  exit- Terminate the program" << std::endl;
 		std::cout << "> " << std::flush;
 
 		std::string input;
@@ -83,6 +83,10 @@ bool ProcessInput(std::string line, Context* ctx)
 	else if (command[0] == "8")
 	{
 		ctx->ExecSphere();
+	}
+	else if (command[0] == "9")
+	{
+		ctx->ExecEllipse();
 	}
 	else
 		std::cout << "\"" + command[0] + "\" is not a command (case-sensitive)" << std::endl << std::endl;

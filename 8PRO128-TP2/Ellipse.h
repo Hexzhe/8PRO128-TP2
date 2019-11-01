@@ -5,7 +5,7 @@ class Ellipse :
 	public Figure
 {
 public:
-	Ellipse();
+	Ellipse() {};
 	~Ellipse() {};
 
 	void afficher();

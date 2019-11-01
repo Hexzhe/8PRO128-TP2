@@ -22,5 +22,5 @@ double Carre::diagonale()
 
 void Carre::afficher() 
 {
-	//TODO: Override << instead?
+	std::cout << *this << std::endl;
 }

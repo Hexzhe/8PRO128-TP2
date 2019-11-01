@@ -13,6 +13,7 @@ public:
 	double aire();
 	double face();
 	double volume();
+
 	void afficher();
 
 	friend std::istream& operator>>(std::istream& is, Cube& cube) {
@@ -23,7 +24,7 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, const Cube& cube)
 	{
 		//TODO
-		os << " Not implemented";
+		os << " Not implemented (Cube)";
 		return os;
 	}
 };

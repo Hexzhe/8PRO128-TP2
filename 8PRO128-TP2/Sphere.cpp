@@ -22,5 +22,5 @@ double Sphere::volume()
 
 void Sphere::afficher() 
 {
-	//TODO: Override << instead?
+	std::cout << *this << std::endl;
 }

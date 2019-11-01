@@ -13,6 +13,7 @@ public :
 	double aire();
 	double perimetre();
 	double diametre();
+
 	void afficher();
 
 	friend std::istream& operator>>(std::istream& is, Cercle& cercle) {
@@ -23,7 +24,7 @@ public :
 	friend std::ostream& operator<<(std::ostream& os, const Cercle& cercle)
 	{
 		//TODO
-		os << " Not implemented";
+		os << " Not implemented (Cercle)";
 		return os;
 	}
 };

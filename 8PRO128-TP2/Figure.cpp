@@ -1,6 +1,6 @@
 #include "Figure.h"
 
-Figure::Figure()
+void Figure::afficher()
 {
-	//TODO: Don't forget >> override
+	std::cout << *this << std::endl;
 }

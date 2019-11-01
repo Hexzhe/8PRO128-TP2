@@ -22,5 +22,5 @@ double Cube::volume()
 
 void Cube::afficher() 
 {
-	//TODO: Override << instead?
+	std::cout << *this << std::endl;
 }

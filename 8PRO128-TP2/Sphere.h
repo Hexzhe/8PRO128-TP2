@@ -13,6 +13,7 @@ public :
 	double diametre();
 	double aire();
 	double volume();
+
 	void afficher();
 
 	friend std::istream& operator>>(std::istream& is, Sphere& sphere) {
@@ -23,7 +24,7 @@ public :
 	friend std::ostream& operator<<(std::ostream& os, const Sphere& sphere)
 	{
 		//TODO
-		os << " Not implemented";
+		os << " Not implemented (Sphere)";
 		return os;
 	}
 };

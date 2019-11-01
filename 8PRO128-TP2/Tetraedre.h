@@ -14,6 +14,7 @@ public:
 	double face();
 	double volume();
 	double hauteur();
+
 	void afficher();
 
 	friend std::istream& operator>>(std::istream& is, Tetraedre& tetraedre) {
@@ -24,7 +25,7 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, const Tetraedre& tetraedre)
 	{
 		//TODO
-		os << " Not implemented";
+		os << " Not implemented (Tetraedre)";
 		return os;
 	}
 };
