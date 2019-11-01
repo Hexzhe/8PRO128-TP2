@@ -2,27 +2,21 @@
 
 Cube::Cube() : Carre()
 {
-	base = new Carre();
-}
-
-Cube::~Cube()
-{
-	delete base;
 }
 
 double Cube::aire() 
 {
-	return 6 * base->aire();
+	return 6 * Carre::aire();
 }
 
 double Cube::face() 
 {
-	return base->aire();
+	return Carre::aire();
 }
 
 double Cube::volume() 
 {
-	return pow(cote, 3);
+	return pow(Carre::longueur, 3);
 }
 
 void Cube::afficher() 

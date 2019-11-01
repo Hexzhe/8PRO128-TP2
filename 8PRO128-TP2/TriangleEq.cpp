@@ -2,22 +2,21 @@
 
 TriangleEq::TriangleEq() : Triangle()
 {
-	cote = 0.0;
 }
 
 double TriangleEq::aire() 
 {
-	return pow(cote, 2) * sqrt(3) / 4;
+	return Triangle::aire();
 }
 
 double TriangleEq::perimetre() 
 {
-	return cote * 3;
+	return Triangle::perimetre();
 }
 
 double TriangleEq::hauteur() 
 {
-	return cote * sqrt(3) / 2;
+	return Triangle::cote1 * sqrt(3) / 2;
 }
 
 void TriangleEq::afficher() 

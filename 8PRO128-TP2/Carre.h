@@ -8,8 +8,6 @@ public:
 	Carre();
 	~Carre() {};
 
-	double cote;
-
 	double aire();
 	double perimetre();
 	double diagonale();

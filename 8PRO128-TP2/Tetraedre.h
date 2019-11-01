@@ -4,13 +4,9 @@
 class Tetraedre :
 	public TriangleEq
 {
-private:
-	double x;
 public:
 	Tetraedre();
-	~Tetraedre();
-
-	Triangle* base;
+	~Tetraedre() {};
 
 	double aire();
 	double face();

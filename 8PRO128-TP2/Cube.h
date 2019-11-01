@@ -6,9 +6,7 @@ class Cube :
 {
 public:
 	Cube();
-	~Cube();
-
-	Carre* base;
+	~Cube() {};
 
 	double aire();
 	double face();

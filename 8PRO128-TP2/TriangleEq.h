@@ -8,8 +8,6 @@ public:
 	TriangleEq();
 	~TriangleEq() {};
 
-	double cote;
-
 	double aire();
 	double perimetre();
 	double hauteur();

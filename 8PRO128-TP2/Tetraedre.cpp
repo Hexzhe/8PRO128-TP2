@@ -2,33 +2,27 @@
 
 Tetraedre::Tetraedre() : TriangleEq()
 {
-	base = new Triangle();
-}
-
-Tetraedre::~Tetraedre()
-{
-	delete base;
 }
 
 double Tetraedre::aire()
 {
-	return sqrt(3) * pow(cote, 2);
+	return sqrt(3) * pow(TriangleEq::cote1, 2);
 }
 
 double Tetraedre::face()
 {
-	return base->aire();
+	return TriangleEq::aire();
 }
 
 double Tetraedre::volume()
 {
-	return pow(cote, 3) * sqrt(2) / 12;
+	return pow(TriangleEq::cote1, 3) * sqrt(2) / 12;
 
 }
 
 double Tetraedre::hauteur()
 {
-	return sqrt(6) / 3 * cote;
+	return sqrt(6) / 3 * TriangleEq::cote1;
 }
 
 void Tetraedre::afficher()

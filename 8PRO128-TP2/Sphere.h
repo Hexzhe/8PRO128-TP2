@@ -6,9 +6,7 @@ class Sphere :
 {
 public :
 	Sphere();
-	~Sphere();
-
-	Cercle* grandCercle;
+	~Sphere() {};
 
 	double diametre();
 	double aire();

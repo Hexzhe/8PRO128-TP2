@@ -3,7 +3,7 @@
 * Auteur(e)s:  Dominique Boivin (BOID31609701)
 *              Jason Gilbert (GILJ05069703)
 * Date:        2019-10-31
-* Description: TODO
+* Description: TODO *ctors are shit to make use of >>
 *******************************************************************/
 
 #include "Context.h"

@@ -2,17 +2,11 @@
 
 Sphere::Sphere() : Cercle()
 {
-	grandCercle = new Cercle();
-}
-
-Sphere::~Sphere()
-{
-	delete grandCercle;
 }
 
 double Sphere::diametre() 
 {
-	return 2 * rayon;
+	return 2 * Cercle::rayon;
 }
 
 double Sphere::aire() 
@@ -22,7 +16,7 @@ double Sphere::aire()
 
 double Sphere::volume()
 {
-	return 4 * M_PI * pow(rayon, 3) / 3;
+	return 4 * M_PI * pow(Cercle::rayon, 3) / 3;
 }
 
 void Sphere::afficher() 

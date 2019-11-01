@@ -2,17 +2,16 @@
 
 Carre::Carre() : Rectangle()
 {
-	cote = 0;
 }
 
 double Carre::aire() 
 {
-	return pow(cote, 2);
+	return pow(Rectangle::longueur, 2);
 }
 
 double Carre::perimetre() 
 {
-	return 4 * cote;
+	return 4 * Rectangle::longueur;
 }
 
 double Carre::diagonale() 
