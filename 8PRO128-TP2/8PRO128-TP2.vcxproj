@@ -184,6 +184,7 @@
     <Text Include="ResourceFiles\carre.txt" />
     <Text Include="ResourceFiles\cercle.txt" />
     <Text Include="ResourceFiles\cube.txt" />
+    <Text Include="ResourceFiles\ellipse.txt" />
     <Text Include="ResourceFiles\rectangle.txt" />
     <Text Include="ResourceFiles\sphere.txt" />
     <Text Include="ResourceFiles\tetraedre.txt" />

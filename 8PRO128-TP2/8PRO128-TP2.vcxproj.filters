@@ -117,5 +117,8 @@
     <Text Include="ResourceFiles\triangleEq.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="ResourceFiles\ellipse.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
