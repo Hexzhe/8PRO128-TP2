@@ -7,4 +7,6 @@ class Ellipse :
 public:
 	Ellipse();
 	~Ellipse() {};
+
+	//Aucunes instructions?
 };
