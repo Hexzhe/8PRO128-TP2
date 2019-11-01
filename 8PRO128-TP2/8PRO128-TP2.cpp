@@ -19,7 +19,20 @@ int main()
 
 	while (true)
 	{
-		std::cout << "Menu\n  1-    Carre\n  2-    Cercle\n  3-    Triangle Eq.\n  4-    Rectangle\n  5-    Triangle\n  6-    Tetraedre\n  7-    Cube\n  8-    Sphere\n  9-    Ellipse\n  help- Show help\n  exit- Terminate the program" << std::endl;
+		std::cout 
+			<< "Menu" << std::endl 
+			<< "  1-    Carre" << std::endl 
+			<< "  2-    Cercle" << std::endl 
+			<< "  3-    Triangle Eq." << std::endl 
+			<< "  4-    Rectangle" << std::endl 
+			<< "  5-    Triangle" << std::endl 
+			<< "  6-    Tetraedre" << std::endl 
+			<< "  7-    Cube" << std::endl 
+			<< "  8-    Sphere" << std::endl 
+			<< "  9-    Ellipse" << std::endl 
+			<< "  help- Show help" << std::endl 
+			<< "  exit- Terminate the program" << std::endl;
+
 		std::cout << "> " << std::flush;
 
 		std::string input;
