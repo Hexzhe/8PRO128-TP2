@@ -3,7 +3,15 @@
 * Auteur(e)s:  Dominique Boivin (BOID31609701)
 *              Jason Gilbert (GILJ05069703)
 * Date:        2019-10-31
-* Description: TODO *ctors are shit to make use of >>
+* Description: Le programme se présente sous forme d'un menu a choix 
+*              multiple. Les options 1-9 sont principalement ce qui 
+*              nous intéresse dans ce TP; chacunes permet de lire 
+*              le fichier de la figure en question (ResourceFiles/), 
+*              de charger les valeurs dans un nouvel objet et d'en 
+*              afficher les propriétés d'une facon personalisé selon 
+*              le type de forme.
+* Note: Les constructeurs sont volontairement incomplets pour 
+*       utiliser la surcharges ">>" pleinement à la place.
 *******************************************************************/
 
 #include "Context.h"
@@ -113,8 +121,8 @@ void ShowHelp()
 {
 	std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
 
-	std::cout << "1-8: Read the specified shape from a file located in {project}/ResourceFiles/ then display the result" << std::endl;
-	std::cout << "  >[1-8]" << std::endl;
+	std::cout << "1-9: Read the specified shape from a file located in {project}/ResourceFiles/ then display the result" << std::endl;
+	std::cout << "  >[1-9]" << std::endl;
 
 	std::cout << "HELP: Show command list" << std::endl;
 	std::cout << "  >help" << std::endl;
