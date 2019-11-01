@@ -16,8 +16,15 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, TriangleEq& triangleEq) {
-		//TODO
+	friend std::istream& operator>>(std::istream& is, TriangleEq& triangleEq) 
+	{
+		std::string line;
+
+		while (is >> line)
+		{
+			//TODO
+		}
+
 		return is;
 	}
 

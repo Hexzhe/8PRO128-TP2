@@ -10,7 +10,8 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Ellipse& ellipse) {
+	friend std::istream& operator>>(std::istream& is, Ellipse& ellipse) 
+	{
 		//No instructions provided. Not implemented.
 		return is;
 	}

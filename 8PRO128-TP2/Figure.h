@@ -2,6 +2,7 @@
 #include <cmath>
 #include <assert.h>
 #include <iostream>
+#include <fstream>
 #define M_PI 3.14159265358979323846  //pi
 
 class Figure
@@ -12,8 +13,15 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Figure& figure) {
-		//TODO
+	friend std::istream& operator>>(std::istream& is, Figure& figure) 
+	{
+		std::string line;
+
+		while (is >> line)
+		{
+			//TODO
+		}
+
 		return is;
 	}
 

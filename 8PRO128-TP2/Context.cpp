@@ -2,54 +2,75 @@
 
 void Context::ExecCarre()
 {
-	//TODO
-	(new Carre())->afficher();
+	auto* carre = new Carre();
+	GetFileStream("ResourceFiles/carre.txt") >> *carre;
+	carre->afficher();
 }
 
 void Context::ExecCercle()
 {
-	//TODO
-	(new Cercle())->afficher();
+	auto* cercle = new Cercle();
+	GetFileStream("ResourceFiles/cercle.txt") >> *cercle;
+	cercle->afficher();
 }
 
 void Context::ExecTriangleEq()
 {
-	//TODO
-	(new TriangleEq())->afficher();
+	auto* triangleEq = new TriangleEq();
+	GetFileStream("ResourceFiles/triangleEq.txt") >> *triangleEq;
+	triangleEq->afficher();
 }
 
 void Context::ExecRectangle()
 {
-	//TODO
-	(new Rectangle())->afficher();
+	auto* rectangle = new Rectangle();
+	GetFileStream("ResourceFiles/rectangle.txt") >> *rectangle;
+	rectangle->afficher();
 }
 
 void Context::ExecTriangle()
 {
-	//TODO
-	(new Triangle())->afficher();
+	auto* triangle = new Triangle();
+	GetFileStream("ResourceFiles/triangle.txt") >> *triangle;
+	triangle->afficher();
 }
 
 void Context::ExecTetraedre()
 {
-	//TODO
-	(new Tetraedre())->afficher();
+	auto* tetraedre = new Tetraedre();
+	GetFileStream("ResourceFiles/tetraedre.txt") >> *tetraedre;
+	tetraedre->afficher();
 }
 
 void Context::ExecCube()
 {
-	//TODO
-	(new Cube())->afficher();
+	auto* cube = new Carre();
+	GetFileStream("ResourceFiles/cube.txt") >> *cube;
+	cube->afficher();
 }
 
 void Context::ExecSphere()
 {
-	//TODO
-	(new Sphere())->afficher();
+	auto* sphere = new Sphere();
+	GetFileStream("ResourceFiles/sphere.txt") >> *sphere;
+	sphere->afficher();
 }
 
 void Context::ExecEllipse()
 {
-	//TODO
-	(new Ellipse())->afficher();
+	auto* ellipse = new Carre();
+	GetFileStream("ResourceFiles/ellipse.txt") >> *ellipse;
+	ellipse->afficher();
+}
+
+std::ifstream Context::GetFileStream(std::string path)
+{
+	std::ifstream file(path);
+	if (!file)
+	{
+		std::cout << "Unable to open file \"" << path << "\"" << std::endl;
+		exit(1);
+	}
+
+	return file;
 }

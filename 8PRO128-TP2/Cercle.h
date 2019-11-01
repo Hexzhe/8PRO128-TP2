@@ -16,8 +16,15 @@ public :
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Cercle& cercle) {
-		//TODO
+	friend std::istream& operator>>(std::istream& is, Cercle& cercle) 
+	{
+		std::string line;
+
+		while (is >> line)
+		{
+			//TODO
+		}
+
 		return is;
 	}
 

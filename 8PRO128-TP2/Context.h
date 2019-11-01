@@ -1,5 +1,6 @@
 #pragma once
 #include <sstream>
+#include <fstream>
 #include "Sphere.h"
 #include "Tetraedre.h"
 #include "Cube.h"
@@ -19,4 +20,7 @@ public:
 	void ExecCube();
 	void ExecSphere();
 	void ExecEllipse();
+
+private:
+	std::ifstream GetFileStream(std::string path);
 };

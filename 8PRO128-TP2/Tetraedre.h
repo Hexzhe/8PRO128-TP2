@@ -17,8 +17,15 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Tetraedre& tetraedre) {
-		//TODO
+	friend std::istream& operator>>(std::istream& is, Tetraedre& tetraedre) 
+	{
+		std::string line;
+
+		while (is >> line)
+		{
+			//TODO
+		}
+
 		return is;
 	}
 

@@ -17,8 +17,15 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Rectangle& rectangle) {
-		//TODO
+	friend std::istream& operator>>(std::istream& is, Rectangle& rectangle) 
+	{
+		std::string line;
+
+		while (is >> line)
+		{
+			//TODO
+		}
+
 		return is;
 	}
 

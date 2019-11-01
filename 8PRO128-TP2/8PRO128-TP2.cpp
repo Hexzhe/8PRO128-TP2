@@ -27,6 +27,8 @@ int main()
 
 		if (!ProcessInput(input, ctx))
 			break;
+
+		std::cout << std::endl;
 	}
 
 	delete ctx;
@@ -89,7 +91,7 @@ bool ProcessInput(std::string line, Context* ctx)
 		ctx->ExecEllipse();
 	}
 	else
-		std::cout << "\"" + command[0] + "\" is not a command (case-sensitive)" << std::endl << std::endl;
+		std::cout << "\"" + command[0] + "\" is not a command (case-sensitive)" << std::endl;
 
 	return true;
 }
@@ -107,5 +109,5 @@ void ShowHelp()
 	std::cout << "EXIT: Exit this program" << std::endl;
 	std::cout << "  >exit" << std::endl;
 
-	std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
 }
