@@ -2,91 +2,164 @@
 
 void Context::ExecCarre()
 {
-	//TODO: Oh boy, looks like we must read N shapes from the file...
-	auto* carre = new Carre();
-	GetFileStream("ResourceFiles/carre.txt") >> *carre;
-	carre->afficher();
-	//TODO: Oh, and also, output (append or create) the objects in a file "resultsCarre.txt"
+	std::ifstream ifs = GetFileStream("ResourceFiles/carre.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* carre = new Carre();
+		ifs >> *carre;
+
+		carre->afficher();
+
+		delete carre;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecCercle()
 {
-	auto* cercle = new Cercle();
+	std::ifstream ifs = GetFileStream("ResourceFiles/cercle.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* cercle = new Cercle();
+		ifs >> *cercle;
 
-	GetFileStream("ResourceFiles/cercle.txt") >> *cercle;
-	cercle->afficher();
-	
-	delete cercle;
+		cercle->afficher();
+
+		delete cercle;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecTriangleEq()
 {
-	auto* triangleEq = new TriangleEq();
+	std::ifstream ifs = GetFileStream("ResourceFiles/triangleEq.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* triangleEq = new TriangleEq();
+		ifs >> *triangleEq;
 
-	GetFileStream("ResourceFiles/triangleEq.txt") >> *triangleEq;
-	triangleEq->afficher();
+		triangleEq->afficher();
 
-	delete triangleEq;
+		delete triangleEq;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecRectangle()
 {
-	auto* rectangle = new Rectangle();
+	std::ifstream ifs = GetFileStream("ResourceFiles/rectangle.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* rectangle = new Rectangle();
+		ifs >> *rectangle;
 
-	GetFileStream("ResourceFiles/rectangle.txt") >> *rectangle;
-	rectangle->afficher();
+		rectangle->afficher();
 
-	delete rectangle;
+		delete rectangle;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecTriangle()
 {
-	auto* triangle = new Triangle();
+	std::ifstream ifs = GetFileStream("ResourceFiles/triangle.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* triangle = new Triangle();
+		ifs >> *triangle;
 
-	GetFileStream("ResourceFiles/triangle.txt") >> *triangle;
-	triangle->afficher();
+		triangle->afficher();
 
-	delete triangle;
+		delete triangle;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecTetraedre()
 {
-	auto* tetraedre = new Tetraedre();
+	std::ifstream ifs = GetFileStream("ResourceFiles/tetraedre.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* tetraedre = new Tetraedre();
+		ifs >> *tetraedre;
 
-	GetFileStream("ResourceFiles/tetraedre.txt") >> *tetraedre;
-	tetraedre->afficher();
+		tetraedre->afficher();
 
-	delete tetraedre;
+		delete tetraedre;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecCube()
 {
-	auto* cube = new Cube();
+	std::ifstream ifs = GetFileStream("ResourceFiles/cube.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* cube = new Cube();
+		ifs >> *cube;
 
-	GetFileStream("ResourceFiles/cube.txt") >> *cube;
-	cube->afficher();
+		cube->afficher();
 
-	delete cube;
+		delete cube;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecSphere()
 {
-	auto* sphere = new Sphere();
+	std::ifstream ifs = GetFileStream("ResourceFiles/sphere.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* sphere = new Sphere();
+		ifs >> *sphere;
 
-	GetFileStream("ResourceFiles/sphere.txt") >> *sphere;
-	sphere->afficher();
+		sphere->afficher();
 
-	delete sphere;
+		delete sphere;
+	}
+
+	ifs.close();
 }
 
 void Context::ExecEllipse()
 {
-	auto* ellipse = new Ellipse();
+	std::ifstream ifs = GetFileStream("ResourceFiles/ellipsee.txt");
+	int count = 0;
+	ifs >> count;
+	for (size_t i = 0; i < count; i++)
+	{
+		auto* ellipse = new Ellipse();
+		ifs >> *ellipse;
 
-	GetFileStream("ResourceFiles/ellipse.txt") >> *ellipse;
-	ellipse->afficher();
+		ellipse->afficher();
 
-	delete ellipse;
+		delete ellipse;
+	}
+
+	ifs.close();
 }
 
 std::ifstream Context::GetFileStream(std::string path)

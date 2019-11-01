@@ -22,16 +22,13 @@ double Carre::diagonale()
 void Carre::afficher() 
 {
 	std::cout << *this << std::endl;
+	//TODO: output (append or create) the objects in a file "resultsCarre.txt"
 }
 
 std::istream& operator>>(std::istream& is, Carre& carre)
 {
-	std::string line;
-
-	while (is >> line)
-	{
-		//TODO
-	}
+	is >> carre.longueur;
+	carre.largeur = carre.longueur;
 
 	return is;
 }
