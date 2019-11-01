@@ -2,9 +2,11 @@
 
 void Context::ExecCarre()
 {
+	//TODO: Oh boy, looks like we must read N shapes from the file...
 	auto* carre = new Carre();
 	GetFileStream("ResourceFiles/carre.txt") >> *carre;
 	carre->afficher();
+	//TODO: Oh, and also, output (append or create) the objects in a file "resultsCarre.txt"
 }
 
 void Context::ExecCercle()
