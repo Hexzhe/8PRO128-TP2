@@ -1,8 +1,10 @@
 #include "Triangle.h"
 
-Triangle::Triangle()
+Triangle::Triangle() : Figure()
 {
-	//TODO: Don't forget >> override
+	cote1 = 0.0;
+	cote2 = 0.0;
+	cote3 = 0.0;
 }
 
 double Triangle::aire() 
@@ -38,4 +40,23 @@ double Triangle::hauteur(int cote)
 void Triangle::afficher() 
 {
 	std::cout << *this << std::endl;
+}
+
+std::istream& operator>>(std::istream& is, Triangle& triangle)
+{
+	std::string line;
+
+	while (is >> line)
+	{
+		//TODO
+	}
+
+	return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const Triangle& triangle)
+{
+	//TODO
+	os << " Not implemented (Triangle)";
+	return os;
 }

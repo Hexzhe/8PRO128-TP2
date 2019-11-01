@@ -1,8 +1,13 @@
 #include "Tetraedre.h"
 
-Tetraedre::Tetraedre()
+Tetraedre::Tetraedre() : TriangleEq()
 {
-	//TODO: Don't forget >> override
+	base = new Triangle();
+}
+
+Tetraedre::~Tetraedre()
+{
+	delete base;
 }
 
 double Tetraedre::aire()
@@ -12,7 +17,7 @@ double Tetraedre::aire()
 
 double Tetraedre::face()
 {
-	return base.aire();
+	return base->aire();
 }
 
 double Tetraedre::volume()
@@ -29,4 +34,23 @@ double Tetraedre::hauteur()
 void Tetraedre::afficher()
 {
 	std::cout << *this << std::endl;
+}
+
+std::istream& operator>>(std::istream& is, Tetraedre& tetraedre)
+{
+	std::string line;
+
+	while (is >> line)
+	{
+		//TODO
+	}
+
+	return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const Tetraedre& tetraedre)
+{
+	//TODO
+	os << " Not implemented (Tetraedre)";
+	return os;
 }

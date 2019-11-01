@@ -17,22 +17,6 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Rectangle& rectangle) 
-	{
-		std::string line;
-
-		while (is >> line)
-		{
-			//TODO
-		}
-
-		return is;
-	}
-
-	friend std::ostream& operator<<(std::ostream& os, const Rectangle& rectangle)
-	{
-		//TODO
-		os << " Not implemented (Rectangle)";
-		return os;
-	}
+	friend std::istream& operator>>(std::istream& is, Rectangle& rectangle);
+	friend std::ostream& operator<<(std::ostream& os, const Rectangle& rectangle);
 };

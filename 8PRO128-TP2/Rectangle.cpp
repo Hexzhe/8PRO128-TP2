@@ -1,8 +1,9 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle()
+Rectangle::Rectangle() : Figure()
 {
-	//TODO: Don't forget >> override
+	largeur = 0.0;
+	longueur = 0.0;
 }
 
 double Rectangle::aire() 
@@ -23,4 +24,23 @@ double Rectangle::diagonale()
 void Rectangle::afficher()
 {
 	std::cout << *this << std::endl;
+}
+
+std::istream& operator>>(std::istream& is, Rectangle& rectangle)
+{
+	std::string line;
+
+	while (is >> line)
+	{
+		//TODO
+	}
+
+	return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const Rectangle& rectangle)
+{
+	//TODO
+	os << " Not implemented (Rectangle)";
+	return os;
 }

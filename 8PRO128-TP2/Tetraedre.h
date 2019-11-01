@@ -4,11 +4,13 @@
 class Tetraedre :
 	public TriangleEq
 {
+private:
+	double x;
 public:
 	Tetraedre();
-	~Tetraedre() {};
+	~Tetraedre();
 
-	Triangle base;
+	Triangle* base;
 
 	double aire();
 	double face();
@@ -17,22 +19,6 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Tetraedre& tetraedre) 
-	{
-		std::string line;
-
-		while (is >> line)
-		{
-			//TODO
-		}
-
-		return is;
-	}
-
-	friend std::ostream& operator<<(std::ostream& os, const Tetraedre& tetraedre)
-	{
-		//TODO
-		os << " Not implemented (Tetraedre)";
-		return os;
-	}
+	friend std::istream& operator>>(std::istream& is, Tetraedre& tetraedre);
+	friend std::ostream& operator<<(std::ostream& os, const Tetraedre& tetraedre);
 };

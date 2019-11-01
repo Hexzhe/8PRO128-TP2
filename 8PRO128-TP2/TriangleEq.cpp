@@ -1,8 +1,8 @@
 #include "TriangleEq.h"
 
-TriangleEq::TriangleEq()
+TriangleEq::TriangleEq() : Triangle()
 {
-	//TODO: Don't forget >> override
+	cote = 0.0;
 }
 
 double TriangleEq::aire() 
@@ -23,4 +23,23 @@ double TriangleEq::hauteur()
 void TriangleEq::afficher() 
 {
 	std::cout << *this << std::endl;
+}
+
+std::istream& operator>>(std::istream& is, TriangleEq& triangleEq)
+{
+	std::string line;
+
+	while (is >> line)
+	{
+		//TODO
+	}
+
+	return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const TriangleEq& triangleEq)
+{
+	//TODO
+	os << " Not implemented (TriangleEq)";
+	return os;
 }

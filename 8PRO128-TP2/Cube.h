@@ -6,9 +6,9 @@ class Cube :
 {
 public:
 	Cube();
-	~Cube() {};
+	~Cube();
 
-	Carre base;
+	Carre* base;
 
 	double aire();
 	double face();
@@ -16,22 +16,6 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Cube& cube) 
-	{
-		std::string line;
-
-		while (is >> line)
-		{
-			//TODO
-		}
-
-		return is;
-	}
-
-	friend std::ostream& operator<<(std::ostream& os, const Cube& cube)
-	{
-		//TODO
-		os << " Not implemented (Cube)";
-		return os;
-	}
+	friend std::istream& operator>>(std::istream& is, Cube& cube);
+	friend std::ostream& operator<<(std::ostream& os, const Cube& cube);
 };

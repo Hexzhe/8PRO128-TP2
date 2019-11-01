@@ -18,22 +18,6 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Triangle& triangle) 
-	{
-		std::string line;
-
-		while (is >> line)
-		{
-			//TODO
-		}
-
-		return is;
-	}
-
-	friend std::ostream& operator<<(std::ostream& os, const Triangle& triangle)
-	{
-		//TODO
-		os << " Not implemented (Triangle)";
-		return os;
-	}
+	friend std::istream& operator>>(std::istream& is, Triangle& triangle);
+	friend std::ostream& operator<<(std::ostream& os, const Triangle& triangle);
 };

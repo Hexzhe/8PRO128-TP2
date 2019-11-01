@@ -6,9 +6,9 @@ class Sphere :
 {
 public :
 	Sphere();
-	~Sphere() {};
+	~Sphere();
 
-	Cercle grandCercle;
+	Cercle* grandCercle;
 
 	double diametre();
 	double aire();
@@ -16,22 +16,6 @@ public :
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Sphere& sphere) 
-	{
-		std::string line;
-
-		while (is >> line)
-		{
-			//TODO
-		}
-
-		return is;
-	}
-
-	friend std::ostream& operator<<(std::ostream& os, const Sphere& sphere)
-	{
-		//TODO
-		os << " Not implemented (Sphere)";
-		return os;
-	}
+	friend std::istream& operator>>(std::istream& is, Sphere& sphere);
+	friend std::ostream& operator<<(std::ostream& os, const Sphere& sphere);
 };

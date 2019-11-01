@@ -13,22 +13,6 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Figure& figure) 
-	{
-		std::string line;
-
-		while (is >> line)
-		{
-			//TODO
-		}
-
-		return is;
-	}
-
-	friend std::ostream& operator<<(std::ostream& os, const Figure& figure)
-	{
-		//TODO
-		os << " Not implemented (Figure)";
-		return os;
-	}
+	friend std::istream& operator>>(std::istream& is, Figure& figure);
+	friend std::ostream& operator<<(std::ostream& os, const Figure& figure);
 };

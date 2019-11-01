@@ -1,8 +1,8 @@
 #include "Carre.h"
 
-Carre::Carre()
+Carre::Carre() : Rectangle()
 {
-	//TODO: Don't forget >> override
+	cote = 0;
 }
 
 double Carre::aire() 
@@ -23,4 +23,23 @@ double Carre::diagonale()
 void Carre::afficher() 
 {
 	std::cout << *this << std::endl;
+}
+
+std::istream& operator>>(std::istream& is, Carre& carre)
+{
+	std::string line;
+
+	while (is >> line)
+	{
+		//TODO
+	}
+
+	return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const Carre& carre)
+{
+	//TODO
+	os << " Not implemented (Carre)";
+	return os;
 }

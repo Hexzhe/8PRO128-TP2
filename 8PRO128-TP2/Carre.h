@@ -16,22 +16,6 @@ public:
 
 	void afficher();
 
-	friend std::istream& operator>>(std::istream& is, Carre& carre) 
-	{
-		std::string line;
-
-		while (is >> line) 
-		{
-			//TODO
-		}
-
-		return is;
-	}
-
-	friend std::ostream& operator<<(std::ostream& os, const Carre& carre)
-	{
-		//TODO
-		os << " Not implemented (Carre)";
-		return os;
-	}
+	friend std::istream& operator>>(std::istream& is, Carre& carre);
+	friend std::ostream& operator<<(std::ostream& os, const Carre& carre);
 };

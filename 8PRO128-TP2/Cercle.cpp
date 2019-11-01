@@ -1,8 +1,8 @@
 #include "Cercle.h"
 
-Cercle::Cercle()
+Cercle::Cercle() : Ellipse()
 {
-	//TODO: Don't forget >> override
+	rayon = 0.0;
 }
 
 double Cercle::aire() 
@@ -23,4 +23,23 @@ double Cercle::diametre()
 void Cercle::afficher() 
 {
 	std::cout << *this << std::endl;
+}
+
+std::istream& operator>>(std::istream& is, Cercle& cercle)
+{
+	std::string line;
+
+	while (is >> line)
+	{
+		//TODO
+	}
+
+	return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const Cercle& cercle)
+{
+	//TODO
+	os << " Not implemented (Cercle)";
+	return os;
 }

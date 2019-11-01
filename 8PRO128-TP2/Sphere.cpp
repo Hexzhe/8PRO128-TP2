@@ -1,8 +1,13 @@
 #include "Sphere.h"
 
-Sphere::Sphere()
+Sphere::Sphere() : Cercle()
 {
-	//TODO: Don't forget >> override
+	grandCercle = new Cercle();
+}
+
+Sphere::~Sphere()
+{
+	delete grandCercle;
 }
 
 double Sphere::diametre() 
@@ -23,4 +28,23 @@ double Sphere::volume()
 void Sphere::afficher() 
 {
 	std::cout << *this << std::endl;
+}
+
+std::istream& operator>>(std::istream& is, Sphere& sphere)
+{
+	std::string line;
+
+	while (is >> line)
+	{
+		//TODO
+	}
+
+	return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const Sphere& sphere)
+{
+	//TODO
+	os << " Not implemented (Sphere)";
+	return os;
 }
