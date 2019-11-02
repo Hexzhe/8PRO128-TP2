@@ -10,8 +10,7 @@ void Figure::afficher() const
 
 std::string Figure::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "No header";
 }
 
 std::istream& operator>>(std::istream& is, Figure& figure)

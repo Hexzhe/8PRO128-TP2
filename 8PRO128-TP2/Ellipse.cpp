@@ -14,8 +14,7 @@ void Ellipse::afficher() const
 
 std::string Ellipse::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "No header";
 }
 
 std::istream& operator>>(std::istream& is, Ellipse& ellipse)
