@@ -16,7 +16,7 @@ void Context::ExecCarre()
 		auto* carre = new Carre();
 		ifs >> *carre;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		carre->afficher();
 
@@ -42,7 +42,7 @@ void Context::ExecCercle()
 		auto* cercle = new Cercle();
 		ifs >> *cercle;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		cercle->afficher();
 
@@ -68,7 +68,7 @@ void Context::ExecTriangleEq()
 		auto* triangleEq = new TriangleEq();
 		ifs >> *triangleEq;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		triangleEq->afficher();
 
@@ -94,7 +94,7 @@ void Context::ExecRectangle()
 		auto* rectangle = new Rectangle();
 		ifs >> *rectangle;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		rectangle->afficher();
 
@@ -120,7 +120,7 @@ void Context::ExecTriangle()
 		auto* triangle = new Triangle();
 		ifs >> *triangle;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		triangle->afficher();
 
@@ -146,7 +146,7 @@ void Context::ExecTetraedre()
 		auto* tetraedre = new Tetraedre();
 		ifs >> *tetraedre;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		tetraedre->afficher();
 
@@ -172,7 +172,7 @@ void Context::ExecCube()
 		auto* cube = new Cube();
 		ifs >> *cube;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		cube->afficher();
 
@@ -198,7 +198,7 @@ void Context::ExecSphere()
 		auto* sphere = new Sphere();
 		ifs >> *sphere;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		sphere->afficher();
 
@@ -224,7 +224,7 @@ void Context::ExecEllipse()
 		auto* ellipse = new Ellipse();
 		ifs >> *ellipse;
 
-		std::cout << std::setw(2) << i << std::flush;
+		std::cout << std::setw(2) << i + 1 << std::flush;
 		std::cout << "." << std::flush;
 		ellipse->afficher();
 
