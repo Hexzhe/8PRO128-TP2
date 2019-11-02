@@ -29,8 +29,7 @@ void Cube::afficher() const
 
 std::string Cube::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "cote      aire      face      vol";
 }
 
 std::istream& operator>>(std::istream& is, Cube& cube)
@@ -42,7 +41,10 @@ std::istream& operator>>(std::istream& is, Cube& cube)
 
 std::ostream& operator<<(std::ostream& os, const Cube& cube)
 {
-	//TODO
-	os << " Not implemented (Cube)";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cube.Carre::largeur << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cube.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cube.face() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cube.volume();
+
 	return os;
 }
