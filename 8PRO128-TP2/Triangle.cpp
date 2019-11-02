@@ -47,8 +47,7 @@ void Triangle::afficher() const
 
 std::string Triangle::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "cote1     cote2     cote3     aire      perim     haut (b=cote1)";
 }
 
 std::istream& operator>>(std::istream& is, Triangle& triangle)
@@ -60,7 +59,12 @@ std::istream& operator>>(std::istream& is, Triangle& triangle)
 
 std::ostream& operator<<(std::ostream& os, const Triangle& triangle)
 {
-	//TODO
-	os << " Not implemented (Triangle)";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangle.cote1 << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangle.cote2 << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangle.cote3 << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangle.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangle.perimetre() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangle.hauteur(1);
+
 	return os;
 }
