@@ -31,8 +31,7 @@ void Rectangle::afficher() const
 
 std::string Rectangle::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "larg      long      aire      perim     diago";
 }
 
 std::istream& operator>>(std::istream& is, Rectangle& rectangle)
@@ -44,7 +43,11 @@ std::istream& operator>>(std::istream& is, Rectangle& rectangle)
 
 std::ostream& operator<<(std::ostream& os, const Rectangle& rectangle)
 {
-	//TODO
-	os << " Not implemented (Rectangle)";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << rectangle.largeur << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << rectangle.longueur << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << rectangle.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << rectangle.perimetre() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << rectangle.diagonale();
+
 	return os;
 }
