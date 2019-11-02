@@ -5,22 +5,22 @@ Cercle::Cercle() : Ellipse()
 	rayon = 0.0;
 }
 
-double Cercle::aire() 
+double Cercle::aire() const
 {
 	return M_PI * pow(rayon, 2);
 }
 
-double Cercle::perimetre() 
+double Cercle::perimetre() const
 {
 	return 2 * M_PI * rayon;
 }
 
-double Cercle::diametre() 
+double Cercle::diametre() const
 {
 	return 2 * rayon;
 }
 
-void Cercle::afficher() 
+void Cercle::afficher() const
 {
 	std::cout << *this << std::endl;
 
@@ -30,8 +30,7 @@ void Cercle::afficher()
 
 std::string Cercle::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "rayon     aire      perim     diam";
 }
 
 std::istream& operator>>(std::istream& is, Cercle& cercle)
@@ -43,7 +42,10 @@ std::istream& operator>>(std::istream& is, Cercle& cercle)
 
 std::ostream& operator<<(std::ostream& os, const Cercle& cercle)
 {
-	//TODO
-	os << " Not implemented (Cercle)";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cercle.rayon << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cercle.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cercle.perimetre() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << cercle.diametre();
+
 	return os;
 }

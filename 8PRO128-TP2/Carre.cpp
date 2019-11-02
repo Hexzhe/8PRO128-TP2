@@ -30,7 +30,7 @@ void Carre::afficher() const
 
 std::string Carre::getEntete()
 {
-	return "cote   aire   perim  diago";
+	return "cote      aire      perim     diago";
 }
 
 std::istream& operator>>(std::istream& is, Carre& carre)
@@ -43,9 +43,10 @@ std::istream& operator>>(std::istream& is, Carre& carre)
 
 std::ostream& operator<<(std::ostream& os, const Carre& carre)
 {
-	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.largeur << " ";
-	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.aire() << " ";
-	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.perimetre() << " ";
-	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.diagonale();
+	os << std::setw(9) << std::setprecision(2) << std::fixed << carre.Rectangle::largeur << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << carre.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << carre.perimetre() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << carre.diagonale();
+
 	return os;
 }
