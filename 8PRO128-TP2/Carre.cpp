@@ -4,22 +4,23 @@ Carre::Carre() : Rectangle()
 {
 }
 
-double Carre::aire() 
+double Carre::aire() const
 {
-	return pow(Rectangle::largeur, 2);
+	auto x = pow(Rectangle::largeur, 2);
+	return x;
 }
 
-double Carre::perimetre() 
+double Carre::perimetre() const
 {
 	return 4 * Rectangle::largeur;
 }
 
-double Carre::diagonale() 
+double Carre::diagonale() const
 {
 	return sqrt(aire() * 2);
 }
 
-void Carre::afficher() 
+void Carre::afficher() const
 {
 	std::cout << *this << std::endl;
 
@@ -29,8 +30,7 @@ void Carre::afficher()
 
 std::string Carre::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "cote   aire   perim  diago";
 }
 
 std::istream& operator>>(std::istream& is, Carre& carre)
@@ -43,7 +43,9 @@ std::istream& operator>>(std::istream& is, Carre& carre)
 
 std::ostream& operator<<(std::ostream& os, const Carre& carre)
 {
-	//TODO
-	os << " Not implemented (Carre)";
+	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.largeur << " ";
+	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.aire() << " ";
+	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.perimetre() << " ";
+	os << std::setw(6) << std::setprecision(2) << std::fixed << carre.diagonale();
 	return os;
 }

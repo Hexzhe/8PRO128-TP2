@@ -6,7 +6,7 @@ void Context::ExecCarre()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Carre::getEntete() << std::endl;
+	std::cout << "#      " << Carre::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -16,6 +16,8 @@ void Context::ExecCarre()
 		auto* carre = new Carre();
 		ifs >> *carre;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		carre->afficher();
 
 		delete carre;
@@ -30,7 +32,7 @@ void Context::ExecCercle()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Cercle::getEntete() << std::endl;
+	std::cout << "#      " << Cercle::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -40,6 +42,8 @@ void Context::ExecCercle()
 		auto* cercle = new Cercle();
 		ifs >> *cercle;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		cercle->afficher();
 
 		delete cercle;
@@ -54,7 +58,7 @@ void Context::ExecTriangleEq()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << TriangleEq::getEntete() << std::endl;
+	std::cout << "#      " << TriangleEq::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -64,6 +68,8 @@ void Context::ExecTriangleEq()
 		auto* triangleEq = new TriangleEq();
 		ifs >> *triangleEq;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		triangleEq->afficher();
 
 		delete triangleEq;
@@ -78,7 +84,7 @@ void Context::ExecRectangle()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Rectangle::getEntete() << std::endl;
+	std::cout << "#      " << Rectangle::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -88,6 +94,8 @@ void Context::ExecRectangle()
 		auto* rectangle = new Rectangle();
 		ifs >> *rectangle;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		rectangle->afficher();
 
 		delete rectangle;
@@ -102,7 +110,7 @@ void Context::ExecTriangle()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Triangle::getEntete() << std::endl;
+	std::cout << "#      " << Triangle::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -112,6 +120,8 @@ void Context::ExecTriangle()
 		auto* triangle = new Triangle();
 		ifs >> *triangle;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		triangle->afficher();
 
 		delete triangle;
@@ -126,7 +136,7 @@ void Context::ExecTetraedre()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Tetraedre::getEntete() << std::endl;
+	std::cout << "#      " << Tetraedre::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -136,6 +146,8 @@ void Context::ExecTetraedre()
 		auto* tetraedre = new Tetraedre();
 		ifs >> *tetraedre;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		tetraedre->afficher();
 
 		delete tetraedre;
@@ -150,7 +162,7 @@ void Context::ExecCube()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Cube::getEntete() << std::endl;
+	std::cout << "#      " << Cube::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -160,6 +172,8 @@ void Context::ExecCube()
 		auto* cube = new Cube();
 		ifs >> *cube;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		cube->afficher();
 
 		delete cube;
@@ -174,7 +188,7 @@ void Context::ExecSphere()
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Sphere::getEntete() << std::endl;
+	std::cout << "#      " << Sphere::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -184,6 +198,8 @@ void Context::ExecSphere()
 		auto* sphere = new Sphere();
 		ifs >> *sphere;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		sphere->afficher();
 
 		delete sphere;
@@ -194,11 +210,11 @@ void Context::ExecSphere()
 
 void Context::ExecEllipse()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/ellipsee.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/ellipse.txt");
 	int count = 0;
 	ifs >> count;
 
-	std::cout << Ellipse::getEntete() << std::endl;
+	std::cout << "#      " << Ellipse::getEntete() << std::endl;
 
 	if (count < 1)
 		std::cout << "  No data" << std::endl;
@@ -208,6 +224,8 @@ void Context::ExecEllipse()
 		auto* ellipse = new Ellipse();
 		ifs >> *ellipse;
 
+		std::cout << std::setw(5) << i << std::flush;
+		std::cout << "." << std::flush;
 		ellipse->afficher();
 
 		delete ellipse;
