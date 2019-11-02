@@ -181,15 +181,15 @@
     <None Include="ResourceFiles\TP2_2.docx" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ResourceFiles\carre.txt" />
-    <Text Include="ResourceFiles\cercle.txt" />
-    <Text Include="ResourceFiles\cube.txt" />
-    <Text Include="ResourceFiles\ellipse.txt" />
-    <Text Include="ResourceFiles\rectangle.txt" />
-    <Text Include="ResourceFiles\sphere.txt" />
-    <Text Include="ResourceFiles\tetraedre.txt" />
-    <Text Include="ResourceFiles\triangle.txt" />
-    <Text Include="ResourceFiles\triangleEq.txt" />
+    <Text Include="ResourceFiles\Input\carre.txt" />
+    <Text Include="ResourceFiles\Input\cercle.txt" />
+    <Text Include="ResourceFiles\Input\cube.txt" />
+    <Text Include="ResourceFiles\Input\ellipse.txt" />
+    <Text Include="ResourceFiles\Input\rectangle.txt" />
+    <Text Include="ResourceFiles\Input\sphere.txt" />
+    <Text Include="ResourceFiles\Input\tetraedre.txt" />
+    <Text Include="ResourceFiles\Input\triangle.txt" />
+    <Text Include="ResourceFiles\Input\triangleEq.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

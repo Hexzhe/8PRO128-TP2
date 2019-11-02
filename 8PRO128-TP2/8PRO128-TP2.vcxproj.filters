@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Input">
+      <UniqueIdentifier>{19e796f9-a0b7-4ef1-8184-a2c3da844020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Output">
+      <UniqueIdentifier>{0c9961fc-8a33-443a-9234-8e0575e7100a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="8PRO128-TP2.cpp">
@@ -93,32 +99,32 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ResourceFiles\carre.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\carre.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\cercle.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\cercle.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\cube.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\cube.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\rectangle.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\ellipse.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\sphere.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\rectangle.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\tetraedre.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\sphere.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\triangle.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\tetraedre.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\triangleEq.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\triangle.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
-    <Text Include="ResourceFiles\ellipse.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="ResourceFiles\Input\triangleEq.txt">
+      <Filter>Resource Files\Input</Filter>
     </Text>
   </ItemGroup>
 </Project>

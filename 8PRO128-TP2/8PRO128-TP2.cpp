@@ -6,10 +6,14 @@
 * Description: Le programme se présente sous forme d'un menu a choix 
 *              multiple. Les options 1-9 sont principalement ce qui 
 *              nous intéresse dans ce TP; chacunes permet de lire 
-*              le fichier de la figure en question (ResourceFiles/), 
+*              le fichier de la figure en question (ResourceFiles/Input/), 
 *              de charger les valeurs dans un nouvel objet et d'en 
 *              afficher les propriétés d'une facon personalisé selon 
-*              le type de forme.
+*              le type de forme. A chaque affichage, le résultat sera
+*              également écrit dans un fichier nommé ResourceFiles/Output/result{Figure}.txt;
+*              Le fichier est ouvert en "append" et l'entête n'est écrite
+*              qu'une seule fois, il y aura donc autant de lignes
+*              que de fois que vous exécuterez une figure.
 * Note: Les constructeurs sont volontairement incomplets pour 
 *       utiliser la surcharges ">>" pleinement à la place.
 *******************************************************************/

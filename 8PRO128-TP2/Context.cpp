@@ -2,7 +2,7 @@
 
 void Context::ExecCarre()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/carre.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/carre.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -28,7 +28,7 @@ void Context::ExecCarre()
 
 void Context::ExecCercle()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/cercle.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/cercle.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -54,7 +54,7 @@ void Context::ExecCercle()
 
 void Context::ExecTriangleEq()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/triangleEq.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/triangleEq.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -80,7 +80,7 @@ void Context::ExecTriangleEq()
 
 void Context::ExecRectangle()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/rectangle.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/rectangle.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -106,7 +106,7 @@ void Context::ExecRectangle()
 
 void Context::ExecTriangle()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/triangle.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/triangle.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -132,7 +132,7 @@ void Context::ExecTriangle()
 
 void Context::ExecTetraedre()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/tetraedre.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/tetraedre.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -158,7 +158,7 @@ void Context::ExecTetraedre()
 
 void Context::ExecCube()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/cube.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/cube.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -184,7 +184,7 @@ void Context::ExecCube()
 
 void Context::ExecSphere()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/sphere.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/sphere.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -210,7 +210,7 @@ void Context::ExecSphere()
 
 void Context::ExecEllipse()
 {
-	std::ifstream ifs = GetFileStream("ResourceFiles/ellipse.txt");
+	std::ifstream ifs = GetFileStream("ResourceFiles/Input/ellipse.txt");
 	int count = 0;
 	ifs >> count;
 
@@ -236,12 +236,12 @@ void Context::ExecEllipse()
 
 std::ifstream Context::GetFileStream(std::string path)
 {
-	std::ifstream file(path);
-	if (!file)
+	std::ifstream ifs(path);
+	if (!ifs)
 	{
 		std::cout << "Unable to open file \"" << path << "\"" << std::endl;
 		exit(1);
 	}
 
-	return file;
+	return ifs;
 }
