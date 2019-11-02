@@ -8,11 +8,11 @@ public:
 	TriangleEq();
 	~TriangleEq() {};
 
-	double aire();
-	double perimetre();
-	double hauteur();
+	double aire() const;
+	double perimetre() const;
+	double hauteur() const;
 
-	void afficher();
+	void afficher() const;
 	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, TriangleEq& triangleEq);

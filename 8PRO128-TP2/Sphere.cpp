@@ -4,22 +4,22 @@ Sphere::Sphere() : Cercle()
 {
 }
 
-double Sphere::diametre() 
+double Sphere::diametre() const
 {
 	return 2 * Cercle::rayon;
 }
 
-double Sphere::aire() 
+double Sphere::aire() const
 {
 	return 4 * aire();
 }
 
-double Sphere::volume()
+double Sphere::volume() const
 {
 	return 4 * M_PI * pow(Cercle::rayon, 3) / 3;
 }
 
-void Sphere::afficher() 
+void Sphere::afficher() const
 {
 	std::cout << *this << std::endl;
 

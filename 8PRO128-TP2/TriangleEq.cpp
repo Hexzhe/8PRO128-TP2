@@ -4,22 +4,22 @@ TriangleEq::TriangleEq() : Triangle()
 {
 }
 
-double TriangleEq::aire() 
+double TriangleEq::aire() const
 {
 	return Triangle::aire();
 }
 
-double TriangleEq::perimetre() 
+double TriangleEq::perimetre() const
 {
 	return Triangle::perimetre();
 }
 
-double TriangleEq::hauteur() 
+double TriangleEq::hauteur() const
 {
 	return Triangle::cote1 * sqrt(3) / 2;
 }
 
-void TriangleEq::afficher() 
+void TriangleEq::afficher() const
 {
 	std::cout << *this << std::endl;
 
@@ -29,8 +29,7 @@ void TriangleEq::afficher()
 
 std::string TriangleEq::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "cote      aire      perim     haut ";
 }
 
 std::istream& operator>>(std::istream& is, TriangleEq& triangleEq)
@@ -43,7 +42,10 @@ std::istream& operator>>(std::istream& is, TriangleEq& triangleEq)
 
 std::ostream& operator<<(std::ostream& os, const TriangleEq& triangleEq)
 {
-	//TODO
-	os << " Not implemented (TriangleEq)";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangleEq.Triangle::cote1 << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangleEq.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangleEq.perimetre() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << triangleEq.hauteur();
+
 	return os;
 }

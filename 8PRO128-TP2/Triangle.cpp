@@ -7,18 +7,18 @@ Triangle::Triangle() : Figure()
 	cote3 = 0.0;
 }
 
-double Triangle::aire() 
+double Triangle::aire() const
 {
 	double p = perimetre();
 	return sqrt(p * (p - cote1) * (p - cote2) * (p - cote3));
 }
 
-double Triangle::perimetre() 
+double Triangle::perimetre() const
 {
 	return cote1 + cote2 + cote3;
 }
 
-double Triangle::hauteur(int cote) 
+double Triangle::hauteur(int cote) const
 {
 	if (cote <= 0 || cote > 3)
 	{
@@ -37,7 +37,7 @@ double Triangle::hauteur(int cote)
 	}
 }
 
-void Triangle::afficher() 
+void Triangle::afficher() const
 {
 	std::cout << *this << std::endl;
 

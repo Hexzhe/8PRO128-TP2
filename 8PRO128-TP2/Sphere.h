@@ -8,11 +8,11 @@ public :
 	Sphere();
 	~Sphere() {};
 
-	double diametre();
-	double aire();
-	double volume();
+	double diametre() const;
+	double aire() const;
+	double volume() const;
 
-	void afficher();
+	void afficher() const;
 	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Sphere& sphere);

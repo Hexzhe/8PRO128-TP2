@@ -11,11 +11,11 @@ public:
 	double largeur;
 	double longueur;
 
-	double aire();
-	double perimetre();
-	double diagonale();
+	double aire() const;
+	double perimetre() const;
+	double diagonale() const;
 
-	void afficher();
+	void afficher() const;
 	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Rectangle& rectangle);

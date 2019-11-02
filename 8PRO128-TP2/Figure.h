@@ -11,7 +11,7 @@ public:
 	Figure() {};
 	~Figure() {};
 
-	void afficher();
+	void afficher() const;
 	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Figure& figure);

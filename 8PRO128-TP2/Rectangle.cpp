@@ -6,22 +6,22 @@ Rectangle::Rectangle() : Figure()
 	longueur = 0.0;
 }
 
-double Rectangle::aire() 
+double Rectangle::aire() const
 {
 	return longueur * largeur;
 }
 
-double Rectangle::perimetre() 
+double Rectangle::perimetre() const
 {
 	return (largeur + longueur) * 2;
 }
 
-double Rectangle::diagonale() 
+double Rectangle::diagonale() const
 {
 	return sqrt(pow(largeur, 2) + pow(longueur, 2));
 }
 
-void Rectangle::afficher()
+void Rectangle::afficher() const
 {
 	std::cout << *this << std::endl;
 

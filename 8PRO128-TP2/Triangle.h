@@ -12,11 +12,11 @@ public:
 	double cote2;
 	double cote3;
 
-	double aire();
-	double perimetre();
-	double hauteur(int cote);
+	double aire() const;
+	double perimetre() const;
+	double hauteur(int cote) const;
 
-	void afficher();
+	void afficher() const;
 	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Triangle& triangle);

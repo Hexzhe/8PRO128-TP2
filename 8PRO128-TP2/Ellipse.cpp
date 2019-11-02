@@ -4,7 +4,7 @@ Ellipse::Ellipse() :  Figure()
 {
 }
 
-void Ellipse::afficher()
+void Ellipse::afficher() const
 {
 	std::cout << *this << std::endl;
 

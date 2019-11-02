@@ -8,11 +8,11 @@ public:
 	Cube();
 	~Cube() {};
 
-	double aire();
-	double face();
-	double volume();
+	double aire() const;
+	double face() const;
+	double volume() const;
 
-	void afficher();
+	void afficher() const;
 	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Cube& cube);

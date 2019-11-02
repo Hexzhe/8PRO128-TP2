@@ -8,12 +8,12 @@ public:
 	Tetraedre();
 	~Tetraedre() {};
 
-	double aire();
-	double face();
-	double volume();
-	double hauteur();
+	double aire() const;
+	double face() const;
+	double volume() const;
+	double hauteur() const;
 
-	void afficher();
+	void afficher() const;
 	static std::string getEntete();
 
 	friend std::istream& operator>>(std::istream& is, Tetraedre& tetraedre);

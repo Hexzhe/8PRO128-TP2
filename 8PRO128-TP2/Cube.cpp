@@ -4,22 +4,22 @@ Cube::Cube() : Carre()
 {
 }
 
-double Cube::aire() 
+double Cube::aire() const
 {
 	return 6 * Carre::aire();
 }
 
-double Cube::face() 
+double Cube::face() const
 {
 	return Carre::aire();
 }
 
-double Cube::volume() 
+double Cube::volume() const
 {
 	return pow(Carre::largeur, 3);
 }
 
-void Cube::afficher() 
+void Cube::afficher() const
 {
 	std::cout << *this << std::endl;
 

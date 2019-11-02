@@ -4,28 +4,28 @@ Tetraedre::Tetraedre() : TriangleEq()
 {
 }
 
-double Tetraedre::aire()
+double Tetraedre::aire() const
 {
 	return sqrt(3) * pow(TriangleEq::cote1, 2);
 }
 
-double Tetraedre::face()
+double Tetraedre::face() const
 {
 	return TriangleEq::aire();
 }
 
-double Tetraedre::volume()
+double Tetraedre::volume() const
 {
 	return pow(TriangleEq::cote1, 3) * sqrt(2) / 12;
 
 }
 
-double Tetraedre::hauteur()
+double Tetraedre::hauteur() const
 {
 	return sqrt(6) / 3 * TriangleEq::cote1;
 }
 
-void Tetraedre::afficher()
+void Tetraedre::afficher() const
 {
 	std::cout << *this << std::endl;
 

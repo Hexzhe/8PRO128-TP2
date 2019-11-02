@@ -1,6 +1,6 @@
 #include "Figure.h"
 
-void Figure::afficher()
+void Figure::afficher() const
 {
 	std::cout << *this << std::endl;
 
