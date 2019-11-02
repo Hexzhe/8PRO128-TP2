@@ -25,8 +25,21 @@ void Rectangle::afficher() const
 {
 	std::cout << *this << std::endl;
 
-	//TODO: Output header if file empty
-	//TODO: output (append or create) in a file "results{Name}.txt"
+	std::string path = "ResourceFiles/Output/resultRectangle.txt";
+	bool exist = false;
+
+	std::ifstream ifs(path);
+	if (ifs)
+		exist = true;
+	ifs.close();
+
+	std::ofstream ofs(path, std::ios::out | std::ios::app);
+	if (!exist)
+		ofs << Rectangle::getEntete() << std::endl;
+
+	ofs << *this << std::endl;
+
+	ofs.close();
 }
 
 std::string Rectangle::getEntete()

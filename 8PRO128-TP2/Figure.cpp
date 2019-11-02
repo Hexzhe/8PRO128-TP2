@@ -4,8 +4,21 @@ void Figure::afficher() const
 {
 	std::cout << *this << std::endl;
 
-	//TODO: Output header if file empty
-	//TODO: output (append or create) in a file "results{Name}.txt"
+	std::string path = "ResourceFiles/Output/resultFigure.txt";
+	bool exist = false;
+
+	std::ifstream ifs(path);
+	if (ifs)
+		exist = true;
+	ifs.close();
+
+	std::ofstream ofs(path, std::ios::out | std::ios::app);
+	if (!exist)
+		ofs << Figure::getEntete() << std::endl;
+
+	ofs << *this << std::endl;
+
+	ofs.close();
 }
 
 std::string Figure::getEntete()
@@ -20,7 +33,7 @@ std::istream& operator>>(std::istream& is, Figure& figure)
 
 std::ostream& operator<<(std::ostream& os, const Figure& figure)
 {
-	os << "  ?";
+	os << "?";
 
 	return os;
 }
