@@ -11,7 +11,7 @@ double Sphere::diametre() const
 
 double Sphere::aire() const
 {
-	return 4 * aire();
+	return 4 * Cercle::aire();
 }
 
 double Sphere::volume() const
@@ -29,8 +29,7 @@ void Sphere::afficher() const
 
 std::string Sphere::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "rayon     diam      aire      vol";
 }
 
 std::istream& operator>>(std::istream& is, Sphere& sphere)
@@ -42,7 +41,10 @@ std::istream& operator>>(std::istream& is, Sphere& sphere)
 
 std::ostream& operator<<(std::ostream& os, const Sphere& sphere)
 {
-	//TODO
-	os << " Not implemented (Sphere)";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << sphere.Cercle::rayon << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << sphere.diametre() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << sphere.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << sphere.volume();
+
 	return os;
 }
