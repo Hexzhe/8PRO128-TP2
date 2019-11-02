@@ -9,7 +9,7 @@ void Context::ExecCarre()
 	std::cout << "#   " << Carre::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -35,7 +35,7 @@ void Context::ExecCercle()
 	std::cout << "#   " << Cercle::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -61,7 +61,7 @@ void Context::ExecTriangleEq()
 	std::cout << "#   " << TriangleEq::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -87,7 +87,7 @@ void Context::ExecRectangle()
 	std::cout << "#   " << Rectangle::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -113,7 +113,7 @@ void Context::ExecTriangle()
 	std::cout << "#   " << Triangle::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -139,7 +139,7 @@ void Context::ExecTetraedre()
 	std::cout << "#   " << Tetraedre::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -165,7 +165,7 @@ void Context::ExecCube()
 	std::cout << "#   " << Cube::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -191,7 +191,7 @@ void Context::ExecSphere()
 	std::cout << "#   " << Sphere::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
@@ -217,7 +217,7 @@ void Context::ExecEllipse()
 	std::cout << "#   " << Ellipse::getEntete() << std::endl;
 
 	if (count < 1)
-		std::cout << "  No data" << std::endl;
+		std::cout << "No data" << std::endl;
 
 	for (size_t i = 0; i < count; i++)
 	{
