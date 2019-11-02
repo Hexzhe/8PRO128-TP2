@@ -35,8 +35,7 @@ void Tetraedre::afficher() const
 
 std::string Tetraedre::getEntete()
 {
-	//TODO
-	return "=====TODO=====";
+	return "cote      aire      face      vol       haut";
 }
 
 std::istream& operator>>(std::istream& is, Tetraedre& tetraedre)
@@ -49,7 +48,11 @@ std::istream& operator>>(std::istream& is, Tetraedre& tetraedre)
 
 std::ostream& operator<<(std::ostream& os, const Tetraedre& tetraedre)
 {
-	//TODO
-	os << " Not implemented (Tetraedre)";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << tetraedre.TriangleEq::cote1 << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << tetraedre.aire() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << tetraedre.face() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << tetraedre.volume() << " ";
+	os << std::setw(9) << std::setprecision(2) << std::fixed << tetraedre.hauteur();
+
 	return os;
 }
